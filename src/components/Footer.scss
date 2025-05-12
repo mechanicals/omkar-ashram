@@ -1,0 +1,57 @@
+@import '../styles/variables';
+
+.footer {
+  background-color: $gray-900;
+  color: $white;
+  padding: 3rem 0;
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-section {
+      h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: $gray-200;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+          margin-bottom: 0.5rem;
+
+          a {
+            color: $gray-200;
+            text-decoration: none;
+            transition: color 0.2s;
+
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba($white, 0.1);
+    text-align: center;
+    color: $gray-200;
+  }
+} 

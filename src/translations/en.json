@@ -1,0 +1,164 @@
+{
+  "common": {
+    "languageName": "English",
+    "brand": "Dandi Omkar Ashram",
+    "address": {
+      "line1": "Brijghat, GarhMukteshwar",
+      "line2": "Uttar Pradesh, India"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "title": "Shri Shri 1008 Shri Dandi Swami Shri Omkar Ashram",
+    "subtitle": "A Spiritual Sanctuary in Brijghat",
+    "location": "Brijghat, GarhMukteshwar, Uttar Pradesh",
+    "introduction": {
+      "title": "Sacred Heritage of Brijghat",
+      "description": "The oldest and most revered Dandi-Wada and Temple, established by Sri Sri 1008 Sri Dandi Swami Omkar Ashram Ji Maharaj, stands as a testament to spiritual enlightenment. This sacred establishment gave birth to what is now known as Brijghat, fostering a thriving community around its spiritual core."
+    },
+    "features": {
+      "spiritualLegacy": {
+        "title": "Spiritual Legacy",
+        "description": "Home to an ancient and sacred Shivlingam, the ashram serves as a sanctuary for Dandi Sanyasis, especially during the Chatur-Masa period, providing selfless service and spiritual guidance."
+      },
+      "divinePurpose": {
+        "title": "Divine Purpose",
+        "description": "Our mission is to spread प्रभु भक्ति (devotion to the Lord) among all people and provide selfless service to Dandi Sanyasis, maintaining the sacred traditions of the Shankaracharya lineage."
+      },
+      "sacredLocation": {
+        "title": "Sacred Location",
+        "description": "Situated just two minutes from the holy Ganga river in Brijghat, the ashram provides a serene environment for spiritual practices, meditation, and religious ceremonies."
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "items": {
+        "spiritual": {
+          "title": "Spiritual Activities",
+          "description": "Daily prayers, meditation sessions, and religious ceremonies"
+        },
+        "gaushala": {
+          "title": "Gaushala",
+          "description": "Sri Omkar Radhakrishna Gaushala managed by the trust"
+        },
+        "community": {
+          "title": "Community Service",
+          "description": "Regular Bhandara and free food distribution to the needy"
+        },
+        "sanyasi": {
+          "title": "Sanyasi Support",
+          "description": "Free accommodation and meals for Dandi Sanyasis"
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "About Dandi Omkar Ashram",
+    "heritage": {
+      "title": "Our Heritage",
+      "description": "Dandi Omkar Ashram, situated in the sacred town of Brijghat, GarhMukteshwar, is a spiritual center deeply rooted in the Shankaracharya tradition. The ashram serves as a sanctuary for Dandi Sanyasis, who are monks following the highest order of renunciation in the Advaita Vedanta tradition."
+    },
+    "significance": {
+      "title": "Spiritual Significance",
+      "description": "The ashram follows the teachings and principles established by Adi Shankaracharya, the great Indian philosopher and saint. It maintains the sacred traditions of the Dandi Sanyasi order, which represents the pinnacle of monastic life in the Vedantic tradition."
+    },
+    "dailyLife": {
+      "title": "Daily Life at the Ashram",
+      "description": "The daily routine at Dandi Omkar Ashram revolves around spiritual practices, including meditation, vedic chanting, and the study of sacred texts. The ashram provides a peaceful environment for spiritual seekers to deepen their understanding of Vedantic philosophy and practice spiritual disciplines."
+    },
+    "location": {
+      "title": "Location",
+      "description": "Located in Brijghat, GarhMukteshwar, Uttar Pradesh, the ashram is situated in a region known for its spiritual significance. The serene environment, combined with the holy atmosphere of the area, makes it an ideal place for spiritual practice and contemplation."
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "images": {
+      "mainTemple": {
+        "title": "Ashram Main Temple",
+        "description": "The main temple where daily prayers are conducted"
+      },
+      "meditationHall": {
+        "title": "Meditation Hall",
+        "description": "A peaceful space for meditation and contemplation"
+      },
+      "garden": {
+        "title": "Garden View",
+        "description": "The serene gardens of the ashram"
+      },
+      "library": {
+        "title": "Library",
+        "description": "Collection of sacred texts and spiritual literature"
+      },
+      "prayerHall": {
+        "title": "Prayer Hall",
+        "description": "Where group prayers and ceremonies take place"
+      },
+      "overview": {
+        "title": "Ashram Overview",
+        "description": "Aerial view of the ashram premises"
+      }
+    },
+    "note": "These are placeholder images. Please replace them with actual photos of Dandi Omkar Ashram."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "visitUs": {
+      "title": "Visit Us",
+      "address": {
+        "line1": "Dandi Omkar Ashram",
+        "line2": "Brijghat, GarhMukteshwar",
+        "line3": "Uttar Pradesh, India"
+      }
+    },
+    "visitingHours": {
+      "title": "Visiting Hours",
+      "description": "The ashram is open for visitors during the following hours:",
+      "morning": "Morning: 6:00 AM - 12:00 PM",
+      "evening": "Evening: 4:00 PM - 8:00 PM"
+    },
+    "guidelines": {
+      "title": "Guidelines",
+      "items": [
+        "Please dress modestly when visiting the ashram",
+        "Maintain silence in meditation and prayer areas",
+        "Photography may be restricted in certain areas",
+        "Please remove shoes before entering sacred spaces"
+      ]
+    },
+    "location": {
+      "title": "Location Map"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message"
+      },
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "quickLinks": {
+      "title": "Quick Links"
+    },
+    "visitUs": {
+      "title": "Visit Us",
+      "description": "Experience the spiritual atmosphere and peaceful environment of our ashram. Visitors are welcome to participate in daily prayers and meditation sessions."
+    },
+    "copyright": "© {{year}} Dandi Omkar Ashram. All rights reserved."
+  }
+} 

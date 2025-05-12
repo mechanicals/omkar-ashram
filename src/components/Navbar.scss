@@ -1,0 +1,47 @@
+@import '../styles/variables';
+
+.navbar {
+  background-color: $white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: $primary-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-dark;
+      }
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+
+      a {
+        color: $text-light;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+} 

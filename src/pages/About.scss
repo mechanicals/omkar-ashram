@@ -1,0 +1,42 @@
+@import '../styles/variables';
+
+.about {
+  padding: 4rem 0;
+
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: $primary-color;
+
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  .about-content {
+    max-width: 56rem;
+    margin: 0 auto;
+
+    .section {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: $text-light;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+} 
