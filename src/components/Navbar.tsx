@@ -17,7 +17,9 @@ const Navbar = () => {
             <div className="nav-links">
               <Link to="/">{t('common.nav.home')}</Link>
               <Link to="/about">{t('common.nav.about')}</Link>
-              <Link to="/gallery">{t('common.nav.gallery')}</Link>
+              <Link to="/lineage">{t('common.nav.lineage', 'Lineage')}</Link>
+              <Link to="/gaushala">{t('common.nav.gaushala', 'Gaushala')}</Link>
+              <Link to="/events">{t('common.nav.events', 'Events')}</Link>
               <Link to="/contact">{t('common.nav.contact')}</Link>
             </div>
             <LanguageSelector />

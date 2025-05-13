@@ -9,7 +9,9 @@
     "nav": {
       "home": "Home",
       "about": "About",
-      "gallery": "Gallery",
+      "lineage": "Lineage",
+      "gaushala": "Gaushala",
+      "events": "Events",
       "contact": "Contact"
     }
   },
@@ -78,6 +80,7 @@
   },
   "gallery": {
     "title": "Photo Gallery",
+    "subtitle": "Experience the divine atmosphere of Dandi Omkar Ashram through our collection of images",
     "images": {
       "mainTemple": {
         "title": "Ashram Main Temple",
@@ -160,5 +163,116 @@
       "description": "Experience the spiritual atmosphere and peaceful environment of our ashram. Visitors are welcome to participate in daily prayers and meditation sessions."
     },
     "copyright": "© {{year}} Dandi Omkar Ashram. All rights reserved."
+  },
+  "lineage": {
+    "title": "Our Sacred Lineage",
+    "subtitle": "The Unbroken Chain of Spiritual Masters",
+    "introduction": {
+      "title": "The Dandi Tradition",
+      "description": "The Dandi order represents the highest tradition of sannyasa, established by Adi Shankaracharya. Our ashram proudly continues this sacred lineage through dedicated spiritual practice and service."
+    },
+    "gurus": {
+      "adiShankara": {
+        "name": "Adi Shankaracharya",
+        "period": "788-820 CE",
+        "title": "Founder of Advaita Vedanta",
+        "description": "The original founder of the Dandi order and establisher of the four main monasteries in India."
+      },
+      "brahmananda": {
+        "name": "Swami Brahmananda Saraswati",
+        "period": "1871-1953",
+        "title": "Shankaracharya of Jyotir Math",
+        "description": "A revered master who revived the Jyotir Math after 165 years."
+      },
+      "shantanand": {
+        "name": "Swami Shantanand Saraswati",
+        "period": "1913-1997",
+        "title": "Shankaracharya of Jyotir Math",
+        "description": "A profound scholar and spiritual master who continued the tradition."
+      },
+      "swaroopanand": {
+        "name": "Swami Swaroopanand Saraswati",
+        "period": "1924-2022",
+        "title": "Shankaracharya of Dwarka and Jyotir Math",
+        "description": "A distinguished spiritual leader who headed two cardinal monasteries."
+      }
+    }
+  },
+  "gaushala": {
+    "title": "Sri Omkar Radhakrishna Gaushala",
+    "subtitle": "Sacred Cow Protection and Care",
+    "introduction": {
+      "title": "Our Sacred Mission",
+      "description": "The Gaushala at Dandi Omkar Ashram is dedicated to the protection and care of cows, recognizing their sacred status in Hindu tradition."
+    },
+    "services": {
+      "title": "Our Services",
+      "shelter": {
+        "title": "Shelter",
+        "description": "Safe and comfortable accommodation for cows with clean surroundings and protection from weather."
+      },
+      "care": {
+        "title": "Medical Care",
+        "description": "Regular health check-ups and medical treatment by experienced veterinarians."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "description": "Balanced and nutritious feed including fresh grass, hay, and special supplements."
+      }
+    },
+    "support": {
+      "title": "Support Our Gaushala",
+      "description": "Your contributions help us provide better care for our sacred cows. Every donation makes a difference in their well-being."
+    }
+  },
+  "events": {
+    "title": "Events & Celebrations",
+    "subtitle": "Spiritual Gatherings and Festivals",
+    "calendar": {
+      "title": "Event Calendar",
+      "daily": "Daily Events",
+      "upcoming": "Upcoming Events",
+      "past": "Past Events",
+      "month": "Month",
+      "week": "Week",
+      "day": "Day",
+      "today": "Today",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "categories": {
+      "daily": "Daily Rituals",
+      "weekly": "Weekly Programs",
+      "festivals": "Festivals",
+      "special": "Special Events"
+    },
+    "eventTypes": {
+      "puja": "Puja",
+      "bhandara": "Bhandara",
+      "satsang": "Satsang",
+      "meditation": "Meditation",
+      "discourse": "Spiritual Discourse",
+      "celebration": "Celebration"
+    },
+    "descriptions": {
+      "morningAarti": "Daily morning prayer and ritual offering",
+      "eveningAarti": "Daily evening prayer and ritual offering",
+      "morningMeditation": "Group meditation session",
+      "guruPurnima": "Annual celebration honoring spiritual teachers",
+      "monthlyBhandara": "Community feast and spiritual gathering",
+      "gaushalaSeva": "Special day dedicated to cow service",
+      "vedantaStudy": "Group study of Vedantic texts",
+      "ramNavami": "Celebration of Lord Rama's birth",
+      "retreat": "Three-day intensive spiritual retreat",
+      "sannyasaDeeksha": "Sacred initiation ceremony"
+    },
+    "specialEvents": {
+      "guruPurnima": "Guru Purnima Celebration",
+      "gaushalaSeva": "Special Gaushala Seva Day",
+      "vedantaStudy": "Vedanta Study Group",
+      "ramNavami": "Ram Navami Celebration",
+      "retreat": "Spiritual Retreat",
+      "sannyasaDeeksha": "Sannyasa Deeksha Ceremony"
+    }
   }
 } 

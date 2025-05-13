@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import ImageCollage from '../components/ImageCollage';
 import './Home.scss';
 
 const Home = () => {
@@ -21,6 +22,28 @@ const Home = () => {
               <p className="subtitle">{t('home.subtitle')}</p>
               <p className="location">{t('home.location')}</p>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="gallery">
+        <div className="container">
+          <motion.div
+            className="section-header"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2>{t('home.gallery.title', 'Photo Gallery')}</h2>
+            <p className="section-description">{t('home.gallery.description', 'Experience the divine atmosphere of Dandi Omkar Ashram through our collection of images')}</p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <ImageCollage />
           </motion.div>
         </div>
       </section>
@@ -67,7 +90,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <h2>{t('home.services.title')}</h2>
+            <h2 className="section-title">{t('home.services.title', 'Sacred Offerings')}</h2>
             <div className="services-grid">
               <div className="service-item">
                 <h3>{t('home.services.items.spiritual.title')}</h3>
