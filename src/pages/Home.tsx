@@ -35,8 +35,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h2>{t('home.gallery.title', 'Photo Gallery')}</h2>
-            <p className="section-description">{t('home.gallery.description', 'Experience the divine atmosphere of Dandi Omkar Ashram through our collection of images')}</p>
+            <h2>{t('gallery.title')}</h2>
+            <p className="section-description">{t('gallery.subtitle')}</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
