@@ -1,4 +1,4 @@
-@import '../styles/variables.scss';
+@import '../styles/variables';
 
 .lineage-page {
   .hero {
@@ -260,6 +260,173 @@
           }
         }
       }
+    }
+  }
+}
+
+.org-chart-wrapper {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: auto;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+  /* Hide scrollbar for a cleaner look on webkit browsers */
+  &::-webkit-scrollbar {
+    height: 8px;
+    background: $gray-100;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-300;
+    border-radius: 4px;
+  }
+}
+
+// Org Chart Node Styles
+.org-node {
+  display: inline-block;
+  min-width: 200px;
+  max-width: 200px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0.5rem 0.5rem;
+  padding: 1rem 1.5rem;
+  background: $white;
+  border: 2px solid $primary-color;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba($primary-color, 0.08);
+  color: $text-dark;
+  font-size: 1.1rem;
+  font-family: $font-family;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    box-shadow: 0 6px 18px rgba($primary-color, 0.18);
+    transform: translateY(-4px) scale(1.03);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+.org-node-main {
+  background: linear-gradient(90deg, lighten($primary-color, 35%), $white 80%);
+  color: $primary-color;
+  font-size: 1.35rem;
+  font-weight: 700;
+  border-width: 3px;
+  border-bottom: 4px solid $primary-color;
+  margin-bottom: 1.5rem;
+}
+
+.org-node-branch {
+  background: linear-gradient(90deg, $gray-100 60%, $white 100%);
+  color: $primary-color;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-color: $primary-color;
+}
+
+.org-node-sub {
+  background: $gray-50;
+  color: $secondary-color;
+  font-size: 1.05rem;
+  font-weight: 500;
+  border-color: $gray-300;
+}
+
+.org-node-leaf {
+  background: $gray-100;
+  color: $text-dark;
+  font-size: 1rem;
+  font-weight: 500;
+  border-color: $gray-200;
+}
+
+// Responsive adjustments
+@media (max-width: 900px) {
+  .org-node {
+    min-width: 150px;
+    max-width: 200px;
+    padding: 0.7rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .org-node-main {
+    font-size: 1.1rem;
+  }
+  .org-node-branch {
+    font-size: 1rem;
+  }
+}
+
+/* Custom Hierarchy Styles */
+/* ... existing custom hierarchy styles (commented out or removed) ... */
+
+/* Circular Hierarchy Section Styles */
+.circular-hierarchy-section {
+  padding: $spacing-2xl 0;
+  text-align: center;
+
+  h2 {
+    margin-bottom: $spacing-xl;
+  }
+
+  #sunburst-chart-container {
+    width: 100%;
+    max-width: 800px; // Adjust as needed
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Style for sunburst segments based on depth
+    svg path {
+      stroke: $white; // Add a white stroke between segments for clarity
+      stroke-width: 1px;
+    }
+
+    .sunburst-depth-0 > path {
+      fill: #FF7F27; // Primary color (Orange)
+    }
+
+    .sunburst-depth-1 > path {
+      fill: #F9BB4D; // Maximum Yellow Red
+    }
+
+    .sunburst-depth-2 > path {
+      fill: #C0322E; // Golden Gate Bridge Orange (Reddish)
+    }
+
+    .sunburst-depth-3 > path {
+      fill: #0A4097; // Yale Blue
+    }
+
+    .sunburst-depth-4 > path {
+      fill: #EED062; // Arylide Yellow
+    }
+
+    .sunburst-depth-5 > path {
+      fill: #F77B4D; // Mandarin (Orange)
+    }
+
+    .sunburst-depth-6 > path {
+      fill: #A0AEC0; // A shade of gray from theme for variety
+    }
+
+    .sunburst-depth-7 > path {
+      fill: #718096; // Another shade of gray
+    }
+
+    // Style for sunburst text labels
+    svg text {
+      font-size: $font-size-sm; // Adjust font size
+      fill: $text-dark !important; // Use a dark color for text and add !important for higher specificity
+      pointer-events: none; /* Prevent text from blocking mouse events */
     }
   }
 } 
