@@ -44,4 +44,79 @@
       }
     }
   }
+}
+
+.hamburger-icon {
+  display: none; // Hidden by default on desktop
+  cursor: pointer;
+  z-index: 1051; // Ensure it's above other content, especially the sidebar
+
+  @media (max-width: 767px) { // Styles for mobile breakpoint
+    display: block; // Show on mobile
+  }
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px; // Adjust width as needed
+  height: 100vh;
+  background-color: $white; // Use theme white color
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); // Subtle shadow
+  transform: translateX(100%); // Start offscreen
+  transition: transform 0.3s ease-in-out;
+  z-index: 1050; // Ensure it's above content but below hamburger
+  padding-top: 60px; // Add padding to not be hidden by fixed header (adjust as per your header height)
+
+  &.open {
+    transform: translateX(0); // Slide in
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; // Align links to the left
+      margin-bottom: 1rem; // Space between links and language selector
+
+      a {
+        padding: 0.75rem 0.5rem; // Padding for clickable area
+        color: $text-dark; // Link color
+        text-decoration: none;
+        font-size: 1.1rem; // Link font size
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: $primary-color; // Hover effect
+        }
+      }
+    }
+
+    // Styling for LanguageSelector within sidebar if needed
+    .language-selector-container { // Assuming LanguageSelector has this class
+      width: 100%; // Make language selector take full width
+      justify-content: flex-start; // Align language selector to the left
+    }
+  }
+}
+
+// Optional: Add an overlay to dim the background when sidebar is open
+.sidebar-overlay {
+  display: none; // Hidden by default
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); // Semi-transparent black
+  z-index: 1049; // Below sidebar
+
+  &.visible {
+    display: block; // Show when sidebar is open
+  }
 } 
